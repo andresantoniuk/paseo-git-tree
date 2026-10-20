@@ -2,7 +2,7 @@ import { execFile } from "node:child_process";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import type { output as ZodOutput } from "zod";
-import { commitCompare, commitCompareDiff, commitDetail, commitDiff, computeGraph, gitBranchOp, gitCommitOp, gitRepoEntry, gitRepos, gitTree, isUncommittedHash, refVisibleInScope, splitRemoteRef, UNCOMMITTED_HASH } from "../shared/git-tree";
+import { commitCompare, commitCompareDiff, commitDetail, commitDiff, computeGraph, gitBranchOp, gitCommitOp, gitRepoEntry, gitRepos, gitTree, isUncommittedHash, refVisibleInScope, splitRemoteRef, UNCOMMITTED_HASH } from "../shared/git-tree.ts";
 
 type Input = ZodOutput<typeof gitTree.input>;
 
